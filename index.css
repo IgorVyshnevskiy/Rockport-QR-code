@@ -1,0 +1,88 @@
+
+
+body {
+  background-image: linear-gradient( to right, rgb(26 26 29 / 50%), rgb(26 26 29 / 50%) ), url(./images/background.jpeg);
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  margin-top: 15px;
+}
+
+.main-title {
+  color: #ffa14d;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.gear-img {
+  position: absolute;
+  top: 17px;
+  fill: #dfdfdf;
+  -webkit-animation: spin 3s linear infinite;
+  -moz-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+.gear-left {
+  left: 17%;
+}
+
+.gear-right {
+  right: 17%;
+}
+
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin {
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+img:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .gear-left {
+    left: 27%;
+  }
+  
+  .gear-right {
+    right: 27%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .main-title {
+    font-size: 44px;
+  }
+  
+  .gear-left {
+    width: 40px;
+    height: 40px;
+    left: 30%;
+  }
+  
+  .gear-right {
+    width: 40px;
+    height: 40px;
+    right: 30%;
+  }
+}
